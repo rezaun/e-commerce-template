@@ -5,14 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Account | Redstore e-commerce</title>
+    <title>Redstore | An e-Commerce Template</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="#">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
 <div class="container">
     <div class="navbar">
         <div class="logo">
@@ -31,38 +30,67 @@
         <img src="assets/images/menu.png" class="menu-icon" onclick="menutoggle();" alt="menu icon">
     </div>
 </div>
-<!--Account Page-->
-<div class="account-page">
+<!--About us Section-->
+<div class="contact-us">
     <div class="container">
         <div class="row">
-            <div class="col-2">
-                <img src="assets/images/image1.png" alt="" width="100%">
-            </div>
-            <div class="col-2">
-                <div class="form-container">
-                    <div class="form-btn">
-                        <span onclick="login()">Login</span>
-                        <span onclick="register()">Register</span>
-                        <hr id="indicator">
-                    </div>
-                    <form id="loginForm">
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Login</button>
-                        <a href="javascript:void(0)">Forgot password</a>
-                    </form>
-                    <form id="regForm">
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Register</button>
-                    </form>
-                </div>
-                </div>
+            <h1>Contact with us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Google Map -->
+<div class="google-map">
+    <div class="">
+        <div class="">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116852.34920797673!2d90.3708670744507!3d23.760359460598647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf5aa8e3c30d%3A0x182fb77673a19561!2z4Kau4Ka-4KaHIOCmmuCmr-CmvOCnh-CmuCDgpqHgp4fgpofgprLgpr8g4Ka44Kaq4Ka_4KaC!5e0!3m2!1sbn!2sbd!4v1637064755239!5m2!1sbn!2sbd"  allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
 </div>
+<!--Cotact Form-->
+<div class="container contact-us">
+    <h1>Drop single line</h1>
+    <div class="row contact-row">
+        <div class="col-2 address-box">
+            <h2>Address</h2>
+           <table>
+               <thead>
+               <tr>
+                   <th><i class="fas fa-home"></i></th>
+                   <td>
+                       330/1, Jafrabad,
+                       <br>Shankar, Mohammadpur,
+                       <br>Dhaka-1207</td>
+               </tr>
+               <tr>
+                   <th><i class="fas fa-phone-square-alt"></i></th>
+                   <td><a href="tel:+8801719420140">+880-1719-420-140</a></td>
+               </tr>
+               <tr>
+                   <th><i class="fas fa-ethernet"></i></th>
+                   <td><a href="https://rezaun.com" target="_blank">www.rezaun.com</a></td>
+               </tr>
+               <tr>
+                   <th></th>
+               </tr>
+               </thead>
+           </table>
+
+        </div>
+        <div class="col-2 contact-form">
+            <form method="post" action="javascript:void(0)">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea name="" id="" cols="50" rows="10" placeholder="Message"></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 
 <!--Footer-->
 <div class="footer">
@@ -114,22 +142,6 @@
         }
 
     }
-    //toggle login/registration form
-    let loginForm = document.getElementById("loginForm");
-    let regForm = document.getElementById("regForm");
-    let indicator = document.getElementById("indicator");
-
-    function register() {
-        regForm.style.transform = "translateX(0px)";
-        loginForm.style.transform = "translateX(0px)";
-        indicator.style.transform = "translateX(110px)";
-    }
-    function login() {
-        regForm.style.transform = "translateX(300px)";
-        loginForm.style.transform = "translateX(300px)";
-        indicator.style.transform = "translateX(0px)";
-    }
-
 </script>
 </body>
 </html>
