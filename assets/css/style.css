@@ -385,7 +385,7 @@ input:focus{
     justify-content: flex-end;
 }
 .total-price table{
-    border-top: 3px solid #ff523b;
+    /*border-top: 3px solid #ff523b;*/
     width: 100%;
     max-width: 450px;
 }
@@ -584,7 +584,12 @@ textarea{
     height: 900px;
     border: none;
 }
-
+.cart-section table tr{
+    border-bottom:2px solid #ff523b ;
+}
+.total-price table tr{
+    border-bottom:0px solid #ff523b ;
+}
 /*Responsive css*/
 @media ( max-width : 800px) {
     nav ul{
